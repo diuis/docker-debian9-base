@@ -9,7 +9,7 @@ script:
   - docker build . -t "$IMAGE_NAME"
 
 before_deploy:
-  - docker login -e="$DOCKERHUB_USERNAME" -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_USERNAME"
+  - docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_USERNAME"
 
 deploy:
   provider: script
