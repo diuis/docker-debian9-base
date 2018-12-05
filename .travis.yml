@@ -1,0 +1,5 @@
+services:
+  - docker
+
+script:
+  - docker build . -t diuis/docker-debian9-base:latest
