@@ -1,4 +1,4 @@
-FROM debian:9-slim
+FROM debian:stretch-slim
 LABEL mantainer "diuis"
 
 RUN groupadd -g 999 appuser && useradd -m -r -u 999 -g appuser appuser && \
